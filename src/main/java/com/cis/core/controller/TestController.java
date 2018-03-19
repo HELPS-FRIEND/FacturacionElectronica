@@ -43,7 +43,7 @@ public class TestController {
 	public String hellow() {
 		return "Hello World!";
 	}
-	@CrossOrigin(origins = "http://localhost:8090")
+	
 	@GetMapping("/list")
 	@ApiOperation(value = "Test List", response = TestModel.class)
 	public List<TestModel> getTes() { 
